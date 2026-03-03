@@ -1,32 +1,60 @@
-# DocuMind 🧠
+# 🧠 DocuMind: AI-Powered Document Intelligence
 
-> Your personal AI-powered document assistant. Upload your files and start a conversation.
+DocuMind is a modern web application that allows you to upload your documents (PDF, DOCX, TXT) and interact with an AI that possesses a complete understanding of their content. It's like having a personalized ChatGPT for your own knowledge base.
 
-DocuMind is a sophisticated, full-stack application that leverages Retrieval-Augmented Generation (RAG) to allow users to "chat" with their documents. Upload PDFs, DOCX, or TXT files and ask questions to get instant, context-aware answers from an AI that has mastered your content.
+This project is designed to be a powerful, local-first tool for researchers, students, and professionals to intelligently query and interact with their private documents.
 
-## Core Features
+---
 
--   **Multi-File Support:** Upload various document formats (`.pdf`, `.docx`, `.txt`).
--   **Intelligent AI Chat:** Ask complex questions and receive accurate answers based on the document's content.
--   **Modern UI:** A clean, responsive, and intuitive interface built with Next.js and Tailwind CSS.
--   **High-Performance Backend:** A robust and scalable API powered by Python and FastAPI.
+### ✨ Features
 
-## Tech Stack
+*   **Secure & Private:** Your documents are processed and stored locally. Nothing is sent to a third-party service.
+*   **Multiple File Formats:** Supports `.pdf`, `.docx`, and `.txt` file uploads.
+*   **Conversational AI:** Engage in a natural language conversation with your documents. Ask questions, summarize content, and extract key information.
+*   **Modern UI:** A sleek, responsive, and intuitive interface built with Next.js and Tailwind CSS.
+*   **High-Performance Backend:** Powered by a FastAPI server, ensuring rapid and efficient API responses.
 
--   **Frontend:** Next.js & TypeScript
--   **Styling:** Tailwind CSS
--   **Backend:** FastAPI (Python)
--   **AI Core:** LangChain
--   **Vector Storage:** ChromaDB
+---
 
-## Project Structure
+### 🛠️ Technology Stack
 
-This project is a monorepo containing two main components:
+*   **Frontend:** [Next.js](https://nextjs.org/) & [TypeScript](https://www.typescriptlang.org/)
+*   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+*   **Backend:** [Python](https://www.python.org/) with [FastAPI](https://fastapi.tiangolo.com/)
+*   **AI Core:** [LangChain](https://www.langchain.com/) for document processing, embeddings, and conversational logic.
+*   **Vector Storage:** [ChromaDB](https://www.trychroma.com/) for efficient local similarity search.
 
-\`\`\`
-/DocuMind
-|-- /client     # The Next.js frontend application
-\`-- /server     # The FastAPI backend server
-\`\`\`
+---
 
-This structure allows for clear separation of concerns while keeping the entire project within a single, manageable repository.
+### 🚀 Getting Started
+
+**Prerequisites:**
+
+*   Node.js & npm (or yarn)
+*   Python 3.9+ & pip
+*   Git
+
+**Installation & Setup:**
+
+1.  **Clone the repository:**
+    `git clone https://github.com/YOUR_USERNAME/DocuMind.git`
+    `cd DocuMind`
+
+2.  **Setup Backend:**
+    `cd backend`
+    `pip install -r requirements.txt`
+    `uvicorn main:app --reload`
+
+3.  **Setup Frontend:**
+    `cd ../frontend`
+    `npm install`
+    `npm run dev`
+
+---
+
+###  Roadmap
+
+*   [ ] User authentication
+*   [ ] Support for more file types (e.g., `.csv`, `.md`)
+*   [ ] Dockerize for one-click deployment
+*   [ ] Integration with cloud vector databases (e.g., Pinecone)
